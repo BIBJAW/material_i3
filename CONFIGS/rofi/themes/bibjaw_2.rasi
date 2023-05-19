@@ -1,0 +1,141 @@
+* {
+    padding:0;
+    margin:0;
+    spacing:0;
+
+    dark:#0f0f0f;
+    red:#ea6962;
+    red-alt:#ca3433;
+    orange:#e78a4e;
+    yellow: #d8a657;
+    blue:#7daea3;
+    green:#a9a665;
+    aqua: #89b482;
+    cream:#d4be98;
+    grey:#504945;
+    dark-grey:#181818;
+    transparent:#00000000;
+    text-color: @cream;
+
+    highlight:underline bold #ca3433;
+
+    font:"Roboto Condensed Bold 11";
+}
+
+configuration {
+        display-drun: " Applications : ";
+        display-run: " Commands: ";
+        display-window: " Windows : ";
+    }
+
+window {
+        background-color:@dark-grey;
+        width: 25%;
+        location: center;
+        padding:0px;
+        margin:0px;
+        border-radius:6px;
+        children:[mainbox];
+        orientaion:horizontal;
+    }
+
+mainbox {
+        border:2px;
+        border-radius:2px;
+        border-color:@grey;
+        background-color:@transparent;
+        children:[inputbar, message,listview];
+        margin:8px;
+        padding:6px;
+    }
+
+inputbar {
+        margin:3px ;
+        padding:3px;
+        border:2px;
+        border-radius:3px;
+        border-color:@dark-grey;
+        background-color:@grey;
+        children:[prompt,entry];
+    }
+
+prompt {
+        background-color:@dark-grey;
+        border-radius:3px;
+        text-color:@orange;
+        padding:5px;
+        margin:2px;
+    font:"Roboto Condensed Bold 13";
+    }
+
+entry {
+        background-color:@dark-grey;
+        border-radius:3px;
+        border-color:@grey;
+        padding:5px;
+        margin:2px;
+        text-color:@red;
+        font:                              "Roboto Condensed Bold 12";
+    font:"Roboto Condensed Bold 13";
+    }
+
+listview {
+        background-color:@dark-grey;
+        margin:5px;
+        padding:5px;
+        lines:8;
+        children:[element];
+    }
+element {
+        background-color:@transparent;
+        padding:3px;
+        border:0px;
+    }
+
+element-text {
+    size:1em;
+    padding:4px;
+    margin:0px;
+    background-color:@transparent;
+    text-color:inherit;
+}
+
+element-icon{
+    size:1em;
+    padding:4px;
+    margin:1px;
+    background-color:@transparent;
+}
+
+element selected {
+    background-color: @orange;
+    text-color: @dark;
+}
+
+element selected active {
+    background-color:                  @red-alt;
+}
+
+message {
+    expand:true;
+        background-color:@dark-grey;
+        text-color:@cream;
+        children:[textbox];
+    }
+
+
+textbox {
+        background-color:@red-alt;
+        text-color:@dark-grey;
+        margin:6px;
+        padding:3px;
+    }
+
+error-message {
+    margin:0px;
+    padding:0px;
+    expand:                            true;
+    background-color:                  @dark-grey;
+    border:                            1px;
+    text-color:@dark;
+    }
