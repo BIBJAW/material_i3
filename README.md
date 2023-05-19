@@ -7,7 +7,10 @@
 - Launcher: rofi
 - Bar: polybar
 - WM: i3
-
+## Installation: 
+```
+git clone https://github.com/BIBJAW/material_i3 && cp -r ~/material_i3/CONFIGS/* ~/.config/ && chmod +x ~/.config/i3/scripts/power.sh && chmod +x ~/.config/polybar/launch.sh
+```
 ## Keybindings
 
 | Keybindings  |        Actions         | 
