@@ -1,16 +1,27 @@
-# A Minimal I3 rice with less bright color 
-![Screenshot](https://github.com/BIBJAW/Final_Rice_Focused/blob/main/rice.png?raw=true)
+# A Minimal I3 rice made with love
 
-## Used Packages:
-- OS: Arch [can be installed in other distros with the right version of packages]
-- Compositor: picom-pijulius
-- Launcher: rofi
-- Bar: polybar
-- WM: i3
+## **Descriptions:** 
+- **OS:** Arch Linux
+- **Window Manager:** i3wm
+- **Bar:** polybar
+- **Launcher:** rofi
+- **Compositor:** picom-pijulius-git
+- **Terminal:** alacritty
+- **Visualizer:** cava
+- **Lock Screen:** betterlockscreen
+
 ## Installation: 
 ```
 git clone https://github.com/BIBJAW/material_i3 && cp -r ~/material_i3/CONFIGS/* ~/.config/ && chmod +x ~/.config/i3/scripts/power.sh && chmod +x ~/.config/polybar/launch.sh
 ```
+## UI
+![Screenshot](https://github.com/BIBJAW/material_i3/blob/main/screenshots/desktop.png?raw=true)
+## Tmux and Neovim workflow
+![Tmux](https://github.com/BIBJAW/material_i3/blob/main/screenshots/tmux.png?raw=true)
+## betterlockscreen
+![bls](https://github.com/BIBJAW/material_i3/blob/main/screenshots/bls.png?raw=true)
+## Rofi launcher and power menu 
+![Rofi](https://github.com/BIBJAW/material_i3/blob/main/screenshots/rofi.png?raw=true)
 ## Keybindings
 
 | Keybindings  |        Actions         | 
