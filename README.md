@@ -8,7 +8,12 @@
 - **Compositor:** picom-pijulius-git
 - **Terminal:** alacritty
 - **Visualizer:** cava
+- **File Manager:** ranger
 - **Lock Screen:** betterlockscreen
+
+## Neovim and Tmux configs: 
+1. [Neovim](https://github.com/BIBJAW/myneovim)
+2. [Tmux](https://github.com/BIBJAW/mytmux)
 
 ## Installation: 
 ```
