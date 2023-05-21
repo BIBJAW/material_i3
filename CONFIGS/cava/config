@@ -152,7 +152,7 @@ channels = stereo
 
 # SDL only support hex code colors, these are the default:
 ; background = '#111111'
-foreground = '#d4be98'
+; foreground = '#d4be98'
 
 
 # Gradient mode, only hex defined colors are supported,
