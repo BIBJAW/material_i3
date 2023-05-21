@@ -10,6 +10,7 @@
 - **Visualizer:** cava
 - **File Manager:** ranger
 - **Lock Screen:** betterlockscreen
+- **Backgrounds:** [Here](https://github.com/BIBJAW/backgrounds)
 
 ## Neovim and Tmux configs: 
 1. [Neovim](https://github.com/BIBJAW/myneovim)
