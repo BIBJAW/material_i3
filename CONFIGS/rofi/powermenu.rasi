@@ -37,6 +37,7 @@ mainbox {
 }
 
 listview {
+    margin:0px;
     columns:4;
     lines:1;
     border-radius:3px;
