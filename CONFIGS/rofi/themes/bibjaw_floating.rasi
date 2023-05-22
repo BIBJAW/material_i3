@@ -1,8 +1,10 @@
-* {
-    padding:0;
-    margin:0;
-    spacing:0;
+/**
+ * ROFI Color theme
+ * User: Habib
+ * Copyright: JuJu Ashbe !!
+*/
 
+* {
     dark:#0f0f0f;
     red:#ea6962;
     red-alt:#ca3433;
@@ -15,98 +17,95 @@
     grey:#504945;
     dark-grey:#181818;
     transparent:#00000000;
-    text-color: @cream;
-
     highlight:underline bold #ca3433;
+
+    padding:0;
+    margin:0;
+    border:0;
+    border-radius:0;
+    spacing:0;
+    vertical-align: 0.5;
+
+    text-color: @cream;
+    border-color:@yellow;
+    background-color:@transparent;
 
     font:"Roboto Condensed Bold 11";
 }
 
 configuration {
-        display-drun: " Applications : ";
-        display-run: " Commands: ";
-        display-window: " Windows : ";
-    }
+    display-drun: " Applications : ";
+    display-run: " Commands: ";
+    display-window: " Windows : ";
+}
 
 window {
-        background-color:@transparent;
-        width: 25%;
-        location: center;
-        padding:0px;
-        margin:0px;
-        border-radius:6px;
-        children:[mainbox];
-        orientaion:horizontal;
-    }
+    width: 25%;
+    location: center;
+    border-radius: 6px;
+    background-color: @transparent;
+    orientaion: horizontal;
+}
 
 mainbox {
-        border:2px;
-        border-radius:2px;
-        border-color:@transparent;
-        background-color:@transparent;
-        children:[inputbar, message,listview];
-        margin:8px;
-        padding:6px;
-    }
+    padding: 6px;
+    margin: 8px;
+    border-radius: 2px;
+    children: [inputbar, message,listview];
+}
 
 inputbar {
-        margin:6px ;
-        padding:3px;
-        border:2px;
-        border-radius:5px;
-        border-color:@dark-grey;
-        background-color:@yellow;
-        children:[prompt,entry];
-    }
+    padding: 3px;
+    margin: 3px ;
+    border: 2px;
+    border-radius: 3px;
+    border-color:@dark-grey;
+    background-color: @yellow;
+    children: [prompt,entry];
+}
 
 prompt {
-        background-color:@dark-grey;
-        border-radius:3px;
-        text-color:@aqua;
-        padding:5px;
-        margin:2px;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 3px;
+    background-color: @dark-grey;
+    text-color: @aqua;
     font:"Roboto Condensed Bold 13";
-    }
+}
 
 entry {
-        background-color:@dark-grey;
-        border-radius:3px;
-        border-color:@grey;
-        padding:5px;
-        margin:2px;
-        text-color:@red;
-        font:                              "Roboto Condensed Bold 12";
+    padding:5px;
+    margin:2px;
+    border-radius:3px;
+    border-color:@grey;
+    background-color:@dark-grey;
+    text-color:@red;
     font:"Roboto Condensed Bold 13";
-    }
+}
 
 listview {
-        border-radius:10px;
-        background-color:@dark-grey;
-        margin:6px;
-        padding:8px;
-        lines:8;
-        children:[element];
-    }
+    lines:8;
+    padding:8px;
+    margin:5px;
+    border-radius:5px;
+    background-color:@dark-grey;
+    children:[element];
+}
 element {
-        margin: 4px;
-        background-color:@transparent;
-        padding:3px;
-        border:0px;
-    }
+    padding:5px;
+}
 
 element-text {
     size:1em;
     padding:4px;
     margin:0px;
-    background-color:@transparent;
     text-color:inherit;
 }
 
 element-icon{
-    size:1em;
     padding:4px;
     margin:1px;
-    background-color:@transparent;
+    size:1em;
 }
 
 element selected {
@@ -115,29 +114,26 @@ element selected {
 }
 
 element selected active {
-    background-color:                  @red-alt;
+    background-color: @red-alt;
 }
 
 message {
     expand:true;
-        background-color:@dark-grey;
-        text-color:@cream;
-        children:[textbox];
-    }
+    background-color: @dark-grey;
+    children: [textbox];
+}
 
 
 textbox {
-        background-color:@red-alt;
-        text-color:@dark-grey;
-        margin:6px;
-        padding:3px;
-    }
+    margin:6px;
+    padding:3px;
+    background-color:@red-alt;
+    text-color:@dark-grey;
+}
 
 error-message {
-    margin:0px;
-    padding:0px;
-    expand:                            true;
-    background-color:                  @dark-grey;
-    border:                            1px;
+    expand: true;
+    border: 1px;
+    background-color: @dark-grey;
     text-color:@dark;
-    }
+}
