@@ -1,4 +1,5 @@
-# A Minimal I3 rice made with love
+# ALERT!: All My configs will be maintained [here](https://github.com/BIBJAW/united_repo_of_configs) from now on....
+## A Minimal I3 rice made with love
 
 ## **Descriptions:** 
 - **OS:** Arch Linux
